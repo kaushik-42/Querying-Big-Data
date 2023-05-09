@@ -96,7 +96,7 @@ export function App({ onSubmit }: QueryFormProps) {
             <input
               type="text"
               className="form-control"
-              value={'datamart.socrata.data-cityofchicago-org.k7hf-8y75'}
+              value={datasetId}
               onChange={(e) => setDatasetId(e.target.value)}
             />
           </label>
