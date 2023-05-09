@@ -103,8 +103,8 @@ def convert_csv_to_parquet(csv_path, parquet_path):
 @app.route('/api/query', methods=['POST'])
 def handle_query():
     data = request.get_json()
-    #dataset_id = data.get('datasetId')
-    dataset_id = 'datamart.socrata.data-cityofchicago-org.k7hf-8y75'
+    dataset_id = data.get('datasetId')
+    #dataset_id = 'datamart.socrata.data-cityofchicago-org.k7hf-8y75'
     query = data.get('query')
     print(dataset_id)
     print(query)
